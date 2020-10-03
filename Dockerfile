@@ -8,8 +8,8 @@ LABEL version="0.1"
 LABEL description="pytorch + some other libraries"
 #
 # Update the image to the latest packages
-#RUN apt-get update && apt-get upgrade -y
-RUN apt-get update -y
+RUN apt-get update && apt-get upgrade -y
+#RUN apt-get update -y
 
 RUN apt-get install -y wget vim htop fish datamash graphviz libgraphviz-dev
 
